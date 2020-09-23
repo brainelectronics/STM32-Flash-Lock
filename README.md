@@ -44,12 +44,29 @@ Be aware of different STLink versions, which only differ in one single char of V
 $ sh flash.sh path/to/some/file.bin
 ```
 
+Flash a file with debug level 1
+
+```bash
+$ sh flash.sh path/to/some/file.bin -d1
+```
+
 ### Locking
 ```bash
 $ sh lock.sh
 ```
+
+Perform lock with debug level 2
+```bash
+$ sh lock.sh -d2
+```
+
 ### Unlocking
 ```bash
 $ sh unlock.sh
+```
+
+Perform unlock with debug level 1
+```bash
+$ sh unlock.sh -d1
 ```
 
