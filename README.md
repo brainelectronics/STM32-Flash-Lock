@@ -33,6 +33,12 @@ A power cycle is required after locking the chip to run the program.
 
 Unlocking the chip will erase it's content completly.
 
+### Config
+Config files for STLink are located at `/usr/share/openocd/scripts/interface/`,
+config for targets can be found at ` /usr/share/openocd/scripts/target/`.
+
+Be aware of different STLink versions, which only differ in one single char of VID.
+
 ### Flashing
 ```bash
 $ sh flash.sh path/to/some/file.bin
