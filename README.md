@@ -70,3 +70,14 @@ Perform unlock with debug level 1
 $ sh unlock.sh -d1
 ```
 
+### Power cycle (only on raspberry)
+Power cycle the target by using a raspberry pi pin.
+
+Connect VCC of the debug interface via a transistor or mosfet to VCC. 
+The mosfet or transistor is controlled by the raspberry pi pin.
+
+You have to run this script once to configure the pin and turn it on.
+
+```bash
+$ python power_cycle.py
+```
