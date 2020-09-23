@@ -3,7 +3,7 @@
 export OPENOCD_SCRIPTS_PATH=/Applications/OpenOCD/
 
 # define path to application
-# export OPENOCD_PATH=/usr/bin/openocd
+# export OPENOCD_PATH=/usr/bin/
 export OPENOCD_PATH=${OPENOCD_SCRIPTS_PATH}/bin/
 
 # specify the serial id of the ST Link to use
