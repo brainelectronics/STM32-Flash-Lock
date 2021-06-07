@@ -87,26 +87,54 @@ sh flash.sh path/to/some/file.bin -d1
 
 #### Locking
 
+Lock a STM32F1 with a STLink V2
+
 ```bash
 sh lock.sh
 ```
 
-Perform lock with debug level 2
+Perform lock with debug level 2 on a STM32F1 with a STLink V2
 
 ```bash
 sh lock.sh -d2
 ```
 
+Use `general_un_lock_st.sh` to lock or unlock a general STM32 device. The
+following example is for an STM32F0 by using a STLink
+
+```bash
+sh un_lock_st.sh \
+/Applications/OpenOCD/bin/openocd \
+/Applications/OpenOCD/scripts \
+stlink \
+stm32f0x \
+lock
+```
+
 #### Unlocking
+
+Unlock a STM32F1 with a STLink V2
 
 ```bash
 sh unlock.sh
 ```
 
-Perform unlock with debug level 1
+Perform unlock with debug level 1 on a STM32F1 with a STLink V2
 
 ```bash
 sh unlock.sh -d1
+```
+
+Use `general_un_lock_st.sh` to lock or unlock a general STM32 device. The
+following example is for an STM32F0 by using an STLink
+
+```bash
+sh un_lock_st.sh \
+/Applications/OpenOCD/bin/openocd \
+/Applications/OpenOCD/scripts \
+stlink \
+stm32f0x \
+unlock
 ```
 
 #### Power cycle (only on raspberry)
